@@ -1,0 +1,25 @@
+version: 1.0
+services: 
+  java-app:
+    container_name: java_app
+    image: pee-java-app:1.0.0
+    build:
+    ports:
+      -8089:8089
+    enviroment:
+      - DATABASE_URL=jdbc:postgresql://java_db:5432/leon_franco
+      - DATABASE_SERNAME=saicoop
+      - DATABASE_PASSWORD=slufpana?
+    depends_on:
+      -java_db
+  java_db:
+   container_name: java_db
+   image: postgres:12
+   ports:
+    -5432:5432
+   enviroment:
+    POSTGRES_USER: saicoop
+    POSTGRES_PASSWORD: slufpana?
+    POSTGRES_DB: leonf_franco
+     
+    

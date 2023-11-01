@@ -1,0 +1,6 @@
+DELETE FROM tablas WHERE idtabla='emisor_adquiriente' AND idelemento='url_alestra';
+INSERT INTO tablas(idtabla,idelemento,dato2) VALUES('emisor_adquiriente','url_alestra','http://192.168.110.85:6969/syc-siscoop/webservice/sagrada-familia/siscoopSecureService');
+
+DELETE FROM tablas WHERE idtabla='emisor_adquiriente' AND idelemento='credenciales';
+INSERT INTO tablas(idtabla,idelemento,dato1,dato2) VALUES('emisor_adquiriente','credenciales','ws_sagrada_familia','ws_sagrada_familia');
+

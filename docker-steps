@@ -1,0 +1,11 @@
+1.- Compila tu jar
+    mvn clean install
+    
+2.- Revisa que tu archivo dockerfile este correcto 
+
+3.- crea tu imagen 
+    sudo docker build -t java-appisss:1.0 .  --> el punto indica que el docker file esta en el mismo directorio del proyecto
+    
+4.- Arranca tu contenedor
+    sudo docker run --net=host -p 9001:9001 01de4cb27154  --> id de imagen a arrancar y host debes indicar hacia donde por si hay otra base de datos
+    
