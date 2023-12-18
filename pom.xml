@@ -14,7 +14,7 @@
 	<name>EmisorAdquiriente</name>
 	<description>Emisor adquiriente</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>1.8</java.version>
 		<cxf.version>3.4.2</cxf.version>
 	</properties>
 	<dependencies>
@@ -116,7 +116,10 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<source>1.8</source>
+                    <target>1.8</target>
 				</configuration>
+				
 			</plugin>
 		</plugins>
 	</build>
